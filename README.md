@@ -18,3 +18,6 @@ Grafana 9.X
 
 ## Screenshot
 ![grafik](https://user-images.githubusercontent.com/35345288/230257145-8fb9d027-6b48-4443-8795-5c9cbbca3aee.png)
+
+## Credits
+Initial python version by [@gekigek99](https://github.com/gekigek99)
