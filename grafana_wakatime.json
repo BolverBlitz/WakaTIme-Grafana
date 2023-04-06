@@ -325,7 +325,7 @@
           "refId": "A"
         }
       ],
-      "title": "Languages",
+      "title": "Total Time",
       "transformations": [
         {
           "id": "calculateField",
@@ -422,7 +422,15 @@
         }
       ],
       "title": "Devices",
-      "transformations": [],
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "/(.*) Marc/",
+            "renamePattern": "$1"
+          }
+        }
+      ],
       "type": "piechart"
     },
     {
@@ -923,6 +931,6 @@
   "timezone": "",
   "title": "WakaTime",
   "uid": "Qs-i4dLVz",
-  "version": 7,
+  "version": 3,
   "weekStart": ""
 }
