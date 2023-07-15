@@ -82,12 +82,16 @@ function executeCommand(command, cwd, log = false) {
       process.exit(1);
     }
 
-    let Start_String = "";
-    if(process.env.BEGIN) {
-      Start_String = ` -b ${process.env.BEGIN}`
-    }
+    // Only 2 more weeks (For Free Users)
+    let Start_String = `-b ${new Date(new Date().setDate(new Date().getDate() - 14)).toISOString().slice(0,10)}`
 
-    await executeCommand(`python3 ./collect.py -t ${Buffer.from(process.env.WAKATOKEN).toString('base64')}${Start_String}`, __dirname, true);
+    if(process.env.PREMIUM == "true") {
+      Start_String = `-b ${new Date(new Date().setDate(new Date().getDate() - 365*2)).toISOString().slice(0,10)}`
+    }
+    console.log(Start_String)
+    process.exit(1)
+
+    await executeCommand(`python3 ./collect.py -t ${Buffer.from(process.env.WAKATOKEN).toString('base64')} ${Start_String}`, __dirname, true);
 
     // Read stats from file, as UFT-8
     const stats = JSON.parse(fs.readFileSync(stats_path, 'utf-8'));

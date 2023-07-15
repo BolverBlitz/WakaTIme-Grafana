@@ -1,5 +1,15 @@
 # WakaTIme-Grafana
- A free alternative to the wakatime dashboard, it will fetch your history automaticly (Max 2 Years)
+ A free alternative to the wakatime dashboard, it will fetch your history automaticly (Max 2 weeks)
+
+---
+Is this project still maintained?  
+If so, to what degree?  
+I've made a list you can find [HERE](https://github.com/BolverBlitz/BolverBlitz/blob/main/MAINTENANCE.md) witch i'll keep updated, you can find the current status there.
+---
+
+# Wakatime update Julay 2023
+ Sadly wakeapi.com dosn´t provide the full history like it used to anymore, you now have to buy premium to get your full 2 years of history, you can then unsibscribe and it will still work.
+ Once fully fetched you can run it once every couple of days (within the 2 weeks) like you used to.
 
 ## Requirements
 NodeJS 16+  
