@@ -5,6 +5,7 @@
 Is this project still maintained?  
 If so, to what degree?  
 I've made a list you can find [HERE](https://github.com/BolverBlitz/BolverBlitz/blob/main/MAINTENANCE.md) witch i'll keep updated, you can find the current status there.
+
 ---
 
 # Wakatime update Julay 2023
