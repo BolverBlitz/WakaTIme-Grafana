@@ -88,8 +88,6 @@ function executeCommand(command, cwd, log = false) {
     if(process.env.PREMIUM == "true") {
       Start_String = `-b ${new Date(new Date().setDate(new Date().getDate() - 365*2)).toISOString().slice(0,10)}`
     }
-    console.log(Start_String)
-    process.exit(1)
 
     await executeCommand(`python3 ./collect.py -t ${Buffer.from(process.env.WAKATOKEN).toString('base64')} ${Start_String}`, __dirname, true);
 
